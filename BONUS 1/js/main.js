@@ -45,11 +45,10 @@ up.addEventListener('click',
     function() {
         imgList[activeImage].classList.remove('show');
         if(activeImage == 0) {
-            activeImage = imagesList.length;
+            activeImage = imagesList.length - 1;
         } else {
             activeImage--;
         }
-        activeImage--;
         imgList[activeImage].classList.add('show');
     }
 )
